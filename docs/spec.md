@@ -6,36 +6,8 @@ Este documento detalha a arquitetura técnica, o modelo de dados e os contratos 
 
 Abaixo está o Diagrama Entidade-Relacionamento (DER) que representa a estrutura do nosso "banco de dados" (`db.json`) e como as informações se conectam.
 
-mermaid
-erDiagram
-USUARIO ||--o{ VEICULO : "possui"
-VEICULO ||--o{ MANUTENCAO : "recebe"
+<img width="2475" height="3367" alt="image" src="https://github.com/user-attachments/assets/c4f63aa7-1338-466c-9bfc-38f499013c4c" />
 
-USUARIO {
-string id PK "Gerado automaticamente"
-string nome
-string email "Usado para o login"
-string senha
-}
-
-VEICULO {
-string id PK
-string usuarioId FK "Vínculo com o Usuário"
-string placa "Formato AAA-1234 ou Mercosul"
-string marca "Ex: Chevrolet"
-string modelo "Ex: Vectra GLS 2.2"
-string ano "Ex: 2000"
-string codigoFipe "Usado para consumo da API pública"
-}
-
-MANUTENCAO {
-string id PK
-string veiculoId FK "Vínculo com o Veículo"
-int quilometragem "KM no momento do serviço"
-string data "Formato ISO (YYYY-MM-DD)"
-string servico "Ex: Troca de óleo e filtro"
-string descricao "Anotações adicionais"
-}
 
 2. Dicionário de Dados
 Breve explicação das tabelas principais:
