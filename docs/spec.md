@@ -9,7 +9,7 @@ Abaixo está o Diagrama Entidade-Relacionamento (DER) que representa a estrutura
 <img width="2475" height="3367" alt="image" src="https://github.com/user-attachments/assets/c4f63aa7-1338-466c-9bfc-38f499013c4c" />
 
 
-2. Dicionário de Dados
+## 2. Dicionário de Dados
 Breve explicação das tabelas principais:
 
 Usuários: Armazena os dados de autenticação e identificação.
@@ -18,7 +18,7 @@ Veículos: Registro da frota do usuário. O campo codigoFipe é fundamental para
 
 Manutenções: Histórico atrelado a um veículo específico, garantindo rastreabilidade do que foi feito e com qual quilometragem.
 
-3. Rotas da API (JSON Server e Externas)
+## 3. Rotas da API (JSON Server e Externas)
 A aplicação consome a API local simulada pelo JSON Server e uma API pública.
 
 JSON Server (Local)
@@ -37,7 +37,7 @@ POST /manutencoes - Registra um novo serviço.
 API Externa (Brasil API / Tabela FIPE)
 GET https://brasilapi.com.br/api/fipe/preco/v1/{codigoFipe} - Retorna o valor atualizado do veículo.
 
-4. Estrutura do Banco de Dados (db.json)
+## 4. Estrutura do Banco de Dados (db.json)
 Esta é a representação em formato JSON do banco de dados simulado inicial.
 {
   "usuarios": [
@@ -79,7 +79,7 @@ Esta é a representação em formato JSON do banco de dados simulado inicial.
   ]
 }
 
-5. Fluxo de Consulta FIPE
+## 5. Fluxo de Consulta FIPE
 O valor financeiro do carro não é salvo no banco, ele é consultado dinamicamente:
 
 O Front-end carrega a lista de veículos (GET /veiculos).
@@ -90,16 +90,16 @@ O Front-end faz um fetch assíncrono para a API externa da FIPE.
 
 O valor retornado é injetado no DOM (Card do veículo) formatado em BRL (R$).
 
-6. Tecnologias e Dependências
+## 6. Tecnologias e Dependências
 Frontend: HTML5, CSS3, JavaScript (Vanilla).
 
 API Fake: JSON Server (Node.js).
 
-Framework CSS: Bootstrap 5.
+Framework CSS: Bootstrap 5.3.3v
 
 Validação: Regex no cliente.
 
-7. Fluxo de Registro de Manutenção
+## 7. Fluxo de Registro de Manutenção
 Usuário seleciona o carro na Garagem e clica em "Adicionar Manutenção".
 
 Preenche KM, Data e Serviço.
