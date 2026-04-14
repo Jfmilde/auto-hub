@@ -10,7 +10,13 @@ Em andamento
 
 ## 🎨 Design
 
-Em andamento
+Framework Front-end: Bootstrap v5.3.3
+
+Prototipagem Responsiva Nativa: Para um sistema de gestão completo, é fundamental que as telas funcionem perfeitamente tanto no desktop quanto na tela de um celular. O sistema flexível de grids do Bootstrap resolve a responsividade de forma muito mais rápida do que criar media queries do zero.
+
+Velocidade de Desenvolvimento: A biblioteca fornece componentes pré-construídos que se encaixam perfeitamente na temática do projeto. É possível usar Cards para exibir os veículos na garagem, Modals para os formulários de cadastro de novas peças ou manutenções, e Offcanvases para menus de navegação laterais.
+
+Integração com Design Systems: A versão 5.3 abandonou dependências antigas (como o jQuery), tornando o projeto mais leve. Além disso, ela tem suporte total a variáveis CSS (Design Tokens). Isso significa que é muito simples pegar o escopo visual desenhado no Figma ou no Stitch e aplicar as cores e tipografias exatas no código, mantendo a consistência visual.
 
 ## 🌐 Site em Produção - GitHub Pages
 
@@ -18,7 +24,13 @@ Em andamento
 
 ## 💻 Tecnologias e Dependências
 
-Em andamento
+Integração de Dados: Brasil API (Tabela FIPE)
+
+Desempenho e Dados em Tempo Real: A escolha da Brasil API se dá pela sua arquitetura moderna, estabilidade e formato de código aberto. Como o objetivo central é ter um hub de gestão automotiva, o sistema precisa exibir o patrimônio atualizado da "garagem virtual" sem que o usuário precise digitar esses valores manualmente.
+
+Escalabilidade: Optar por uma API externa em vez de manter um banco de dados local (como um db.json gigante) com os preços de todos os veículos evita a sobrecarga de armazenamento e a necessidade de criar rotinas complexas de atualização mensal.
+
+Padronização: Os endpoints entregam respostas em JSON limpas e previsíveis, o que facilita muito o tratamento desses dados, seja no front-end ou processando isso em um back-end automatizado
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
