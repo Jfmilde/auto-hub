@@ -1,0 +1,27 @@
+{
+  "name": "auto-hub",
+  "version": "1.0.0",
+  "description": "Este projeto tem como objetivo implementar uma aplicação web responsiva para o gerenciamento de veículos e controle de manutenções. O AutoHub permite ao usuário registrar sua frota, lançar históricos de manutenções preventivas e corretivas, e acompanhar o valor de mercado atualizado do veículo através da consulta à Tabela FIPE.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jfmilde/auto-hub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Jfmilde/auto-hub/issues"
+  },
+  "homepage": "https://github.com/Jfmilde/auto-hub#readme",
+  "dependencies": {
+    "jquery": "^4.0.0"
+  }
+}
